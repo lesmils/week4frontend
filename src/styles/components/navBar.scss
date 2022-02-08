@@ -1,0 +1,15 @@
+.main-container {
+  background-color: #8568ff;
+  display: flex;
+  position: absolute;
+  width: 1920px;
+  height: 400px;
+  left: 0px;
+  .middle-container {
+    justify-content: space-around;
+  }
+}
+
+.shop-container {
+  flex-direction: column;
+}
