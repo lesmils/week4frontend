@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
+import { Link } from "react-router-dom";
 
 export default function DetailsPage() {
   const { id } = useParams();
@@ -21,8 +22,6 @@ export default function DetailsPage() {
     getProductDetails();
   }, []);
 
-  console.warn(product);
-
   return product ? (
     <div>
       <ProductCard
@@ -33,6 +32,7 @@ export default function DetailsPage() {
         mainImage={product.mainImage}
         description={product.description}
       />
+      <Link to="/"> &laquo; Go back</Link>
     </div>
   ) : (
     <p>Loading ...</p>
