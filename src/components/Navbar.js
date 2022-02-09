@@ -1,19 +1,38 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import { useState } from "react";
+
+function handleOnSubmit(event) {
+  event.preventDefault();
+}
+
 function Navbar() {
+  const [search, setSearch] = useState("");
   return (
-    <div>
-      <div className="outer-navbar">
-        <h1>Navbar</h1>
-        <div className="middle-container">
+    <div className="outer-navbar">
+      <div className="middle-navbar">
+        yellow1
+        <div>Logo+ links</div>
+        <div>
           <NavLink to="/" end>
             Home
           </NavLink>
-          <input type="text" placeholder="search"></input>
-          <div className="inner-navbar"></div>
+          <form onSubmit={handleOnSubmit}>
+            <input
+              type="text"
+              placeholder="search"
+              value={search}
+              onChange={(event) => {
+                setSearch(event.target.value);
+                console.log(setSearch);
+              }}
+            ></input>
+            <button onClick={handleOnSubmit}>search</button>
+          </form>
         </div>
       </div>
+      <div>icons (user/cart/favorites)</div>
     </div>
   );
 }

@@ -1,10 +1,36 @@
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  position: absolute;
-  width: 921px;
-  height: 230px;
-  left: 626px;
-  top: 1061px;
+.main-container {
+  background-color: #8568ff;
+  display: flex;
+  width: 1920px;
+  height: 20rem;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  .middle-container {
+    justify-content: space-around;
+  }
+}
+
+.sidebar {
+  margin-bottom: 0;
+  position: fixed;
+  height: 100%;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.side-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.shop-container {
+  flex-direction: column;
+}
+
+.footer {
+  background-color: wheat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

@@ -23,7 +23,9 @@ export default function DetailsPage() {
   }, []);
 
   return product ? (
-    <div>
+    <div className="product-card">
+      <Link to="/"> &laquo; Go back</Link>
+
       <ProductCard
         key={product.id}
         title={product.title}
@@ -31,8 +33,8 @@ export default function DetailsPage() {
         price={product.price}
         mainImage={product.mainImage}
         description={product.description}
+        hideButton={true}
       />
-      <Link to="/"> &laquo; Go back</Link>
     </div>
   ) : (
     <p>Loading ...</p>

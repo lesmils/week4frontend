@@ -1,15 +1,10 @@
-.main-container {
-  background-color: #8568ff;
+.outer-navbar {
   display: flex;
-  position: absolute;
-  width: 1920px;
-  height: 300;
-  left: 0px;
-  .middle-container {
-    justify-content: space-around;
-  }
+  justify-content: space-around;
+  flex-direction: row;
 }
-
-.shop-container {
-  flex-direction: column;
+.middle-navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
