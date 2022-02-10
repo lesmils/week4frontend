@@ -1,8 +1,8 @@
 .main-container {
   background-color: #8568ff;
   display: flex;
-  width: 1920px;
-  height: 20rem;
+  min-width: 1920px;
+  height: 7rem;
   left: 0px;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 .footer {
-  background-color: wheat;
+  background-color: #8568ff;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

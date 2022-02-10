@@ -1,0 +1,15 @@
+.hero-container {
+  background-color: #8568ff;
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: 28rem;
+  top: 3.99%;
+  bottom: 35.93%;
+  height: 250px;
+
+  .inner-hero {
+    display: flex;
+    justify-content: space-between;
+  }
+}

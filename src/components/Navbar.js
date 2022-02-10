@@ -1,20 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import { useState } from "react";
-
 function handleOnSubmit(event) {
   event.preventDefault();
 }
 
-function Navbar() {
-  const [search, setSearch] = useState("");
+function Navbar(props) {
   return (
     <div className="outer-navbar">
       <div className="middle-navbar">
         yellow1
         <div>Logo+ links</div>
-        <div>
+        <div className="homesearch">
+          <NavLink to="/" end>
+            Home
+          </NavLink>
           <NavLink to="/" end>
             Home
           </NavLink>
@@ -22,10 +22,9 @@ function Navbar() {
             <input
               type="text"
               placeholder="search"
-              value={search}
+              value={props.searchval}
               onChange={(event) => {
-                setSearch(event.target.value);
-                console.log(setSearch);
+                props.searchset(event.target.value);
               }}
             ></input>
             <button onClick={handleOnSubmit}>search</button>

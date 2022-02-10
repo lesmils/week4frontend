@@ -23,7 +23,7 @@ export default function DetailsPage() {
   }, []);
 
   return product ? (
-    <div className="product-card">
+    <div>
       <Link to="/"> &laquo; Go back</Link>
 
       <ProductCard

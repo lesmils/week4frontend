@@ -2,9 +2,16 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-items: flex-end;
+  height: 100px;
 }
 .middle-navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.homesearch {
+  display: flex;
   flex-direction: row;
 }

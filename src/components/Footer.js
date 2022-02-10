@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react/cjs/react.development";
 
 function Footer() {
@@ -30,7 +30,12 @@ function Footer() {
           {categories.map((genre) => {
             return (
               <li>
-                <Link to={`/categories/${genre.id}`}>{genre.title}</Link>
+                <NavLink
+                  to={`/categories/${genre.id}`}
+                  style={{ textDecoration: "none" }}
+                >
+                  {genre.title}
+                </NavLink>
               </li>
             );
           })}

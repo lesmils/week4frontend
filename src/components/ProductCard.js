@@ -5,14 +5,13 @@ export default function ProductCard(props) {
   return (
     <div className="product-card">
       <div className="product-container">
-        <img src={mainImage} alt="product" />
+        <img className="productjpg" src={mainImage} alt="product" />
       </div>
       <div className="details-container">
-        <h5>{title}</h5>
+        <h5 style={{ color: "#00584E" }}>{title}</h5>
         <p>€ {price}</p>
         <p>{description}</p>
         <p>&#x2605; {rating}</p>
-
         {!props.hideButton && (
           <Link to={`/details/${id}`}>
             <button>
