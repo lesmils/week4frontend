@@ -7,9 +7,9 @@
   top: 3.99%;
   bottom: 35.93%;
   height: 250px;
+}
+.inner-hero {
+  display: flex;
 
-  .inner-hero {
-    display: flex;
-    justify-content: space-between;
-  }
+  justify-content: flex-end;
 }

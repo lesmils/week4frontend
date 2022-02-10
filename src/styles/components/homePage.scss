@@ -13,6 +13,7 @@
 
 .sidebar {
   margin-bottom: 0;
+  min-width: 1920px;
   position: fixed;
   height: 100%;
   padding-left: 0;
@@ -33,4 +34,5 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  min-width: 800px;
 }

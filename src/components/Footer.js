@@ -25,14 +25,14 @@ function Footer() {
         <p>logo</p>
       </div>
 
-      <div>
+      <div className="categorylinks">
         <ul>
           {categories.map((genre) => {
             return (
-              <li>
+              <li style={{ textDecoration: "none" }}>
                 <NavLink
                   to={`/categories/${genre.id}`}
-                  style={{ textDecoration: "none" }}
+                  style={{ color: "black" }}
                 >
                   {genre.title}
                 </NavLink>

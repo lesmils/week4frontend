@@ -9,13 +9,9 @@ function Navbar(props) {
   return (
     <div className="outer-navbar">
       <div className="middle-navbar">
-        yellow1
-        <div>Logo+ links</div>
+        <div className="logolinks">Logo+ links</div>
         <div className="homesearch">
-          <NavLink to="/" end>
-            Home
-          </NavLink>
-          <NavLink to="/" end>
+          <NavLink to="/" end style={{ color: "black" }}>
             Home
           </NavLink>
           <form onSubmit={handleOnSubmit}>
