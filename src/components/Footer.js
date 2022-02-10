@@ -42,6 +42,12 @@ function Footer() {
         </ul>
       </div>
       <div>
+        <NavLink to={"/signup"}>
+          <h2 style={{ color: "black" }}>Signup</h2>
+        </NavLink>
+      </div>
+
+      <div>
         <h3>My account</h3>
       </div>
       <div>

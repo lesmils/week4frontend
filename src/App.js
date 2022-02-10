@@ -7,6 +7,7 @@ import Shop from "./pages/Shop";
 import { Navbar, Hero, Footer } from "./components/index";
 import { useState } from "react";
 import CategoryPage from "./pages/CategoryPage";
+import Signup from "./pages/Signup";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -27,6 +28,7 @@ function App() {
           <Route path="/shop" element={<Shop searchval={search} />} />
           <Route path="/" element={<HomePage searchval={search} />} />
           <Route path="/categories/:id" element={<CategoryPage />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
       <div>
