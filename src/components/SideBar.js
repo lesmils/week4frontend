@@ -53,7 +53,7 @@ function SideBar(props) {
         name="electronics"
         value="electronics"
       />
-      <label for="electronics"> Electronics </label> <br />
+      <label htmlFor="electronics"> Electronics </label> <br />
       <input
         type="checkbox"
         onChange={handleMan}
@@ -61,7 +61,7 @@ function SideBar(props) {
         name="mens-clothing"
         value="men-clothing"
       />
-      <label for="mens-cloth"> Mens clothing </label>
+      <label htmlFor="mens-clothing"> Mens clothing </label>
       <br />
       <input
         type="checkbox"
@@ -70,7 +70,7 @@ function SideBar(props) {
         name="womens-cloth"
         value="womens-cloth"
       />
-      <label for="womens-cloth"> Womens clothing </label> <br />
+      <label htmlFor="womens-cloth"> Womens clothing </label> <br />
       <input
         type="checkbox"
         onChange={handleJewelry}
@@ -78,7 +78,8 @@ function SideBar(props) {
         name="jewelery"
         value="jewelery"
       />
-      <label for="jewelery"> Jewelery </label> <br />
+      <label htmlFor="jewelery"> Jewelery </label> <br />
+      {/* Star rating */}
       <hr />
       <h4>Rating</h4>
       <input
@@ -88,7 +89,7 @@ function SideBar(props) {
         name="oneStars"
         value="oneStars"
       />
-      <label for="oneStars"> &#x2605;</label>
+      <label htmlFor="oneStars"> &#x2605;</label>
       <br />{" "}
       <input
         type="checkbox"
@@ -97,7 +98,7 @@ function SideBar(props) {
         name="twoStars"
         value="twoStars"
       />
-      <label for="twoStars"> &#x2605;&#x2605;</label>
+      <label htmlFor="twoStars"> &#x2605;&#x2605;</label>
       <br />{" "}
       <input
         type="checkbox"
@@ -106,7 +107,7 @@ function SideBar(props) {
         name="threeStars"
         value="threeStars"
       />
-      <label for="threeStars"> &#x2605;&#x2605;&#x2605;</label>
+      <label htmlFor="threeStars"> &#x2605;&#x2605;&#x2605;</label>
       <br />{" "}
       <input
         type="checkbox"
@@ -115,7 +116,7 @@ function SideBar(props) {
         name="fourStars"
         value="fourStars"
       />
-      <label for="fourStars"> &#x2605;&#x2605;&#x2605;&#x2605;</label>
+      <label htmlFor="fourStars"> &#x2605;&#x2605;&#x2605;&#x2605;</label>
       <br />{" "}
       <input
         type="checkbox"
@@ -124,7 +125,10 @@ function SideBar(props) {
         name="fiveStars"
         value="fiveStars"
       />
-      <label for="fiveStars"> &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</label>
+      <label htmlFor="fiveStars">
+        {" "}
+        &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
+      </label>
       <br />
       <hr />
       <p>Other</p>

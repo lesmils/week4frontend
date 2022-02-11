@@ -11,9 +11,7 @@ export default function DetailsPage() {
   const [product, setProduct] = useState(null);
 
   async function getProductDetails() {
-    const productResponse = await axios.get(
-      `http://localhost:4000/products/${id}`
-    );
+    const productResponse = await axios.get(`/products/${id}`);
     console.log(productResponse.data);
     setProduct(productResponse.data);
   }

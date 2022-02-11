@@ -36,20 +36,54 @@ button {
   -webkit-user-select: none;
   vertical-align: middle;
 
-  button:hover,
-  button:focus {
+  &:hover,
+  &:focus {
     background-color: #16437e;
     color: #ffffff;
   }
 
-  button :active {
+  &:active {
     background: #09223b;
     color: rgb(255, 255, 255, 0.7);
   }
 
-  button :disabled {
+  &:disabled {
     cursor: not-allowed;
     background: rgba(0, 0, 0, 0.08);
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.fa {
+  // padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  box-sizing: border-box;
+}
+
+.fa-snapchat {
+  background: #fffb00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

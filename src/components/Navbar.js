@@ -8,11 +8,18 @@ function handleOnSubmit(event) {
 function Navbar(props) {
   return (
     <div className="outer-navbar">
+      <NavLink to="/" style={{ color: "black" }}>
+        <i className="fa fa-home">Home</i>
+      </NavLink>
       <div className="middle-navbar">
-        <div className="logolinks">Logo+ links</div>
         <div className="homesearch">
-          <NavLink to="/" end style={{ color: "black" }}>
-            Home
+          <NavLink
+            to="/blog"
+            end
+            className="blog-link"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            Blog
           </NavLink>
           <form onSubmit={handleOnSubmit}>
             <input

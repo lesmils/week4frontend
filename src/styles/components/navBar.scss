@@ -1,17 +1,28 @@
 .outer-navbar {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: flex-end;
   height: 100px;
+  display: grid;
+  grid-gap: 15%;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 0.5rem;
+
+  & > * {
+    padding-top: 1.5rem;
+  }
 }
+
 .middle-navbar {
   display: flex;
   justify-content: end;
   flex-direction: row;
 }
 
+.logolinks {
+}
+
 .homesearch {
   display: flex;
   flex-direction: row;
+}
+.blog-link {
+  margin-right: 0.5rem;
 }

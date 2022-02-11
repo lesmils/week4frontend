@@ -24,7 +24,7 @@ export default function HomePage(props) {
 
   const allProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/products");
+      const response = await axios.get("/products");
       setProducts(response.data);
     } catch (error) {
       console.warn("No data found", error);

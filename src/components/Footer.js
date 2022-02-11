@@ -8,7 +8,7 @@ function Footer() {
 
   async function fetchCategories() {
     try {
-      const response = await axios.get("http://localhost:4000/categories");
+      const response = await axios.get("/categories");
       setCategories(response.data);
     } catch (error) {
       console.log(error, "no data");
@@ -27,9 +27,9 @@ function Footer() {
 
       <div className="categorylinks">
         <ul>
-          {categories.map((genre) => {
+          {categories.map((genre, index) => {
             return (
-              <li style={{ textDecoration: "none" }}>
+              <li key={index} style={{ textDecoration: "none" }}>
                 <NavLink
                   to={`/categories/${genre.id}`}
                   style={{ color: "black" }}
@@ -42,16 +42,21 @@ function Footer() {
         </ul>
       </div>
       <div>
-        <NavLink to={"/signup"}>
+        <NavLink style={{ textDecoration: "none" }} to={"/signup"}>
           <h2 style={{ color: "black" }}>Signup</h2>
         </NavLink>
       </div>
 
       <div>
-        <h3>My account</h3>
+        <NavLink style={{ textDecoration: "none" }} to={"/create-user"}>
+          <h2 style={{ color: "black" }}>User Login</h2>
+        </NavLink>
       </div>
       <div>
-        <p>icons</p>
+        <a href="http://www.facebook.com" className="fa fa-facebook"></a>
+        <a href="http://www.twitter.com" className="fa fa-twitter"></a>
+        <a href="http://www.instagram.com" className="fa fa-instagram"></a>
+        <a href="http://www.snapchat.com" className="fa fa-snapchat"></a>
       </div>
     </div>
   );

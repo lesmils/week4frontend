@@ -1,5 +1,5 @@
 import React from "react";
-import Fan from "/home/milton/Code/projectw4frontend/src/components/Fan.png";
+import Fan from "../Fan.png";
 
 function Hero() {
   return (
